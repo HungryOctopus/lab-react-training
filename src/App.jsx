@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import IdCard from './Idcard';
-/* import Greetings from './Greetings';
-import { render } from 'react-dom'; */
+import Greetings from './Greetings';
+import ClickablePicture from './ClickablePicture';
 
 class App extends React.Component {
   constructor() {
@@ -50,9 +50,9 @@ class App extends React.Component {
           height={172}
           birthdate={new Date('1988-05-11')}
         />
-        {/*         {Iteration 2
-          /*           <Greetings lang="de">Ludwig</Greetings>
-          <Greetings lang="fr">François</Greetings> */}
+        {/*         {Iteration 2*/}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
 
         {/* Iteration 8  */}
         <div>
@@ -60,6 +60,12 @@ class App extends React.Component {
             {this.state.count} Likes
           </button>
         </div>
+
+        {/* Iteration 9 */}
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
       </div>
     );
   }
